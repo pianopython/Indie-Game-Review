@@ -17,19 +17,24 @@ body {
 @media screen and (max-width: 600px) {
     body {
         width: 90vw;
+        font-size: 20px;
     }
 
     #featuredArticle {
         flex-wrap: wrap;
+        margin-bottom: 1em;
     }
 
     #featuredArticle img {
         width: 100%;
+        margin-bottom: 1em;
     }
 
     #allArticles {
         grid-template-columns: auto;
     }
+
+    
 }
 
 /* desktop+tablet style */
@@ -37,6 +42,11 @@ body {
     body {
         width: 70vw;
         max-width: 900px;
+        font-size: 18px;
+    }
+
+    #featuredArticle {
+        margin-bottom: 1.5em;
     }
 
     #featuredArticle img {
@@ -85,6 +95,7 @@ nav a {
     margin-right: 0;
     width: 15vw;
     resize: none;
+    display: none;
 }
 
 h1 {
@@ -115,10 +126,7 @@ p span {
 
 #allArticles {
     display: grid;
-}
-
-#allArticles div {
-    padding-right: 1em;
+    gap: 1em;
 }
 
 #allArticles img {
@@ -161,6 +169,10 @@ footer form {
 footer form textarea {
     width: 80%;
     resize: none;
+    font-family: Roboto;
+    font-size: 1em;
+    outline: none;
+    padding: .2em;
 }
 
 #submitEmail {
