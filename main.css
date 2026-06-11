@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #58bd53;
+    --secondary-color: #2d8dce;
+    --tertiary-color: #c531ac;
+}
+
+body {
+    font-family: Roboto;
+    list-style-position: inside;
+    background-color: black;
+    color: white;
+    padding-top: 1em;
+    margin: 0 auto 0 auto;
+}
+
+/* mobile style */
+@media screen and (max-width: 600px) {
+    body {
+        width: 90vw;
+    }
+
+    #featuredArticle {
+        flex-wrap: wrap;
+    }
+
+    #featuredArticle img {
+        width: 100%;
+    }
+
+    #allArticles {
+        grid-template-columns: auto;
+    }
+}
+
+/* desktop+tablet style */
+@media screen and (min-width: 601px) {
+    body {
+        width: 70vw;
+        max-width: 900px;
+    }
+
+    #featuredArticle img {
+        width: 60%;
+        margin-right: 0.8em;
+    }
+    
+    #allArticles {
+        grid-template-columns: auto auto;
+    }
+}
+
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+}
+
+#featuredArticle {
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+    font-family: League Spartan;
+    margin: 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+nav {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+nav span {
+    opacity: 30%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#search {
+    margin-right: 0;
+    width: 15vw;
+    resize: none;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0.em;
+    margin-bottom: 0.1em;
+}
+
+#logo {
+    margin-right: 0.2em;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--tertiary-color));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p span {
+    color: var(--primary-color);
+}
+
+#allArticles {
+    display: grid;
+}
+
+#allArticles div {
+    padding-right: 1em;
+}
+
+#allArticles img {
+    height: 12em;
+}
+
+#allArticles div img {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+img {
+    border-color: #FFFFFF;
+    border-width: 2px;
+    border-style: solid;
+    object-fit: cover;
+}
+
+img:hover {
+    animation-name: imgMouseover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes imgMouseover {
+  from {transform: scale(1);}
+  to {transform: scale(1.02);}
+}
+
+footer h3 {
+    margin-bottom: 0.5em;
+}
+
+footer form {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+footer form textarea {
+    width: 80%;
+    resize: none;
+}
+
+#submitEmail {
+    width: 20%;
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+#sitemap {
+    display: flex;
+}
+
+#sitemap ul {
+    list-style-type: none;
+}
+
+/*
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
