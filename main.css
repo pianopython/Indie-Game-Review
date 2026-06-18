@@ -16,7 +16,7 @@ body {
 /* mobile style */
 @media screen and (max-width: 600px) {
     body {
-        width: 90vw;
+        width: 85vw;
         font-size: 20px;
     }
 
@@ -33,8 +33,6 @@ body {
     #allArticles {
         grid-template-columns: auto;
     }
-
-    
 }
 
 /* desktop+tablet style */
@@ -152,6 +150,26 @@ img:hover {
     /*animation-iteration-count: infinite;*/
 }
 
+#screenshots {
+    margin-bottom: 1em;
+}
+
+#carousel {
+    display: flex;
+    margin-top: .5em;
+}
+
+#carousel img {
+    width: 90%;
+    animation: none;
+}
+
+#carousel button {
+    background-color: white;
+    border: none;
+    width: 5%;
+}
+
 @keyframes imgMouseover {
   from {transform: scale(1);}
   to {transform: scale(1.02);}
@@ -188,6 +206,7 @@ footer form textarea {
 
 #sitemap ul {
     list-style-type: none;
+    list-style-position: inside;
 }
 
 /*
