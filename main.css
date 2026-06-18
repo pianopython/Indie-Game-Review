@@ -13,6 +13,20 @@ body {
     margin: 0 auto 0 auto;
 }
 
+.lightMode {
+    background-color: white;
+    color: black;
+}
+
+#lightModeToggle {
+    position: fixed;
+    width: 4em;
+    height: 3em;
+    right: 1em;
+    top: 1em;
+    opacity: .8;
+}
+
 /* mobile style */
 @media screen and (max-width: 600px) {
     body {
